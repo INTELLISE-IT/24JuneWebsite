@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Effects</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        @keyframes myAnimation1 {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+        .d1 {
+            animation-name: myAnimation1;
+            animation-duration: 4s;
+        }
+        @keyframes myAnimation2 {
+            0% { background-color: red; }
+            25% { background-color: yellow; }
+            50% { background-color: green; }
+            100% { background-color: blue; }
+        }
+        .d2 {
+            animation-name: myAnimation2;
+            animation-duration: 5s;
+        }
+        @keyframes myAnimation3 {
+            0% { background-color: red; left: 0px; top: 0px; }
+            25% { background-color: yellow; left: 200px; top: 0px; }
+            50% { background-color: green; left: 200px; top: 200px; }
+            75% { background-color: blue; left: 0px; top: 200px; }
+            100% { background-color: red; left: 0px; top: 0px; }
+        }
+        .d3 {
+            position: relative;
+            animation-name: myAnimation3;
+            animation-duration: 5s;
+        }
+        .d4 {
+            position: relative;
+            animation-name: myAnimation3;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+        }
+        .d5 {
+            position: relative;
+            animation-name: myAnimation3;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        .d6 {
+            position: relative;
+            animation-name: myAnimation3;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        .d7 {
+            position: relative;
+            animation-name: myAnimation3;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .d8 {
+            position: relative;
+            animation-name: myAnimation3;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        .d9 {
+            position: relative;
+            /* animation-name: myAnimation3;
+            animation-duration: 6s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            OR */
+            animation: myAnimation3 6s 2s infinite alternate-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation in HTML, using CSS</h1>
+    <div class="d9">Animation 9</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d8">Animation 8</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d7">Animation 7</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d6">Animation 6</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d5">Animation 5</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d4">Animation 4</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d3">Animation 3</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d1">Animation 1</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    <div class="d2">Animation 2</div>
+    <p>CSS allows animation of HTML elements without using JavaScript or Flash Player.</p>
+    
+</body>
+</html>

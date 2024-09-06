@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+        }
+        .dTransition1 {
+            transition-property: width;
+            transition-duration: 1s;
+        }
+        .dTransition1:hover {
+            width: 300px;
+        }
+        .dTransition2 {
+            transition-property: width, height;
+            transition-duration: 2s, 4s;
+        }
+        .dTransition2:hover {
+            width: 300px;
+            height: 450px;
+        }
+        .dTransition3 {
+            transition-property: width, height;
+            transition-duration: 2s, 4s;
+            transition-timing-function: linear;
+        }
+        .dTransition3:hover {
+            width: 300px;
+            height: 450px;
+        }
+        .dTransition4 {
+            transition-property: width, height;
+            transition-duration: 2s, 4s;
+            transition-timing-function: ease-in;
+        }
+        .dTransition4:hover {
+            width: 300px;
+            height: 450px;
+        }
+        .dTransition5 {
+            transition-property: width, height;
+            transition-duration: 2s, 4s;
+            transition-timing-function: ease-out;
+            transition-delay: 1s;
+        }
+        .dTransition5:hover {
+            width: 300px;
+            height: 450px;
+        }
+        .dTransition6 {
+            transition-property: width, height, transform;
+            transition-duration: 2s, 4s;
+            transition-timing-function: ease-in-out;
+        }
+        .dTransition6:hover {
+            width: 300px;
+            height: 450px;
+            transform: rotate(180deg);
+        }
+        .dTransition7 {
+            /* transition-property: width, height, transform;
+            transition-duration: 2s, 4s;
+            transition-timing-function: linear;
+            OR */
+            transition: width 2s, height 4s, transform 4s linear;
+        }
+        .dTransition7:hover {
+            width: 400px;
+            height: 400px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transitions</h1>
+    <div class="dTransition1"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+    <div class="dTransition2"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+    <div class="dTransition3"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+    <div class="dTransition4"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+    <div class="dTransition5"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+    <div class="dTransition6"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+    <div class="dTransition7"></div>
+    <p>CSS transitions allow us to change property values smoothly, over a given duration.</p>
+</body>
+</html>
